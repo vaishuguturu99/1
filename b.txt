@@ -1,0 +1,34 @@
+) using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment
+{
+    class Smallnofun
+    {
+        public int First(int a, int b)
+        {
+            int c;
+            if (a > b)
+                c = b;
+            else
+                c = a;
+            return c;
+        }
+        public static void Main(String[] args)
+        {
+            int a, b, d;
+            Console.WriteLine("Enter the value of a:");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the value of b:");
+            b = int.Parse(Console.ReadLine());
+            Smallnofun f = new Smallnofun();
+            d = f.First(a, b);
+            Console.WriteLine($"{d} is smaller");
+
+        }
+
+    }
+}
